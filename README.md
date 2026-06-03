@@ -16,10 +16,21 @@ The React + Vite frontend lives in `wuhalink-premium/wuhalink-premium/`.
 ```bash
 cd wuhalink-premium/wuhalink-premium
 npm install
-cp firebase.example.env .env
 ```
 
-Edit `.env` with your Firebase project values from the [Firebase console](https://console.firebase.google.com/).
+**Option A — Firebase CLI (recommended)**
+
+```bash
+npm run firebase:login          # sign in to Google / Firebase
+npm run firebase:use            # pick your Firebase project from the list
+npm run firebase:env            # writes .env from your web app config
+```
+
+Your Firebase project must already have a **Web app** registered (Firebase console → Project settings → Your apps → Web). Use `npm run firebase:config` to preview values without writing `.env`.
+
+**Option B — manual**
+
+Copy `firebase.example.env` to `.env` and fill in values from the [Firebase console](https://console.firebase.google.com/) → Project settings → Your apps → Web.
 
 ### Run locally
 
