@@ -22,8 +22,11 @@ Thumbs.db
 .idea/
 *.iml
 .vscode/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
 
-# Android (legacy / future mobile work)
+# Android
 .gradle/
 local.properties
 captures/
